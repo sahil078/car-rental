@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Car</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Add New Car</h1>
+    </div>
+    <div class="container">
+        <form action="../backend/add_car.php" method="POST">
+            <div class="form-group">
+                <label for="vehicleModel">Vehicle Model</label>
+                <input type="text" class="form-control" id="vehicleModel" name="model" required>
+            </div>
+            <div class="form-group">
+                <label for="vehicleNumber">Vehicle Number</label>
+                <input type="text" class="form-control" id="vehicleNumber" name="number" required>
+            </div>
+            <div class="form-group">
+                <label for="seatingCapacity">Seating Capacity</label>
+                <input type="number" class="form-control" id="seatingCapacity" name="capacity" required>
+            </div>
+            <div class="form-group">
+                <label for="rentPerDay">Rent per Day</label>
+                <input type="number" class="form-control" id="rentPerDay" name="rent" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Car</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Car Rental Agency</p>
+    </div>
+</body>
+</html>
